@@ -1,17 +1,30 @@
 import Link from "next/link";
+import Image from "next/image";
 import AxisMotif from "./AxisMotif";
 
 const chips = ["Branding", "Graphic Design", "Digital Marketing", "Web Design", "Print Design", "Consultancy"];
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-gradient-navy">
-      <div className="container-wide pt-20 pb-24 md:pt-28 md:pb-32">
+    <section className="relative overflow-hidden bg-charcoal">
+      <div className="absolute inset-0">
+        <Image
+          src="/hero-bg.png"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-60"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-charcoal/60 via-charcoal/70 to-charcoal" />
+      </div>
+
+      <div className="container-wide pt-20 pb-24 md:pt-28 md:pb-32 relative">
         <div className="flex flex-wrap gap-3 mb-10">
           {chips.map((chip) => (
             <span
               key={chip}
-              className="text-xs md:text-sm px-4 py-2 rounded-full border border-white/10 text-platinum bg-white/5"
+              className="text-xs md:text-sm px-4 py-2 rounded-full border border-white/10 text-platinum bg-white/5 backdrop-blur-sm"
             >
               {chip}
             </span>
