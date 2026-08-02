@@ -11,11 +11,11 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           <div className="col-span-2">
             <Image
-              src="/logo-mark.png"
+              src="/logo-full.png"
               alt="Axis Media Solutions"
-              width={44}
-              height={44}
-              className="h-10 w-10 mb-4"
+              width={1422}
+              height={417}
+              className="h-9 w-auto mb-4"
             />
             <p className="text-platinum text-sm max-w-xs">
               We partner with ambitious East African businesses that know great creative work fuels faster growth.
