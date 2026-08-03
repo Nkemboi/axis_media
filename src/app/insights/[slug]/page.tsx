@@ -21,7 +21,7 @@ export default async function InsightDetailPage({ params }: { params: { slug: st
 
   return (
     <>
-      <article className="container-wide pt-[50px] pb-24 max-w-2xl">
+      <article className="container-wide pt-[110px] pb-24 max-w-2xl">
         <Link href="/insights" className="text-sm text-steel hover:text-axis-orange">&larr; All insights</Link>
 
         <p className="text-xs text-steel mt-8">

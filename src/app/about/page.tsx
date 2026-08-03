@@ -11,7 +11,7 @@ const values = ["Creativity", "Excellence", "Innovation", "Integrity", "Results"
 export default function AboutPage() {
   return (
     <>
-      <section className="container-wide pt-[50px] pb-16">
+      <section className="container-wide pt-[110px] pb-16">
         <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-3xl">
           Creative Solutions That Move Brands Forward.
         </h1>

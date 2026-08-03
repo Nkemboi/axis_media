@@ -21,7 +21,7 @@ export default async function ServiceDetailPage({ params }: { params: { slug: st
 
   return (
     <>
-      <section className="container-wide pt-[50px] pb-16">
+      <section className="container-wide pt-[110px] pb-16">
         <Link href="/services" className="text-sm text-steel hover:text-axis-orange">&larr; All services</Link>
 
         <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-3xl mt-8">

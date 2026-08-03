@@ -13,7 +13,7 @@ export default async function InsightsPage() {
 
   return (
     <>
-      <section className="container-wide pt-[50px] pb-16">
+      <section className="container-wide pt-[110px] pb-16">
         <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-3xl">Insights</h1>
         <p className="mt-6 max-w-xl text-muted text-base md:text-lg">
           News, views, and real-life lessons in brand and design.
