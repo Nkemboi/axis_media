@@ -26,9 +26,9 @@ export default function Footer() {
             <Image
               src="/logo-full.png"
               alt="Axis Media Solutions"
-              width={1422}
-              height={417}
-              className="h-8 w-auto mb-4"
+              width={1440}
+              height={374}
+              className="h-10 w-auto mb-4"
             />
             <p className="text-white/60 text-sm max-w-xs">
               We partner with ambitious East African businesses that know great creative work fuels faster growth.

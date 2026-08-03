@@ -63,9 +63,9 @@ export default function Header() {
             <Image
               src="/logo-full.png"
               alt="Axis Media Solutions"
-              width={1422}
-              height={417}
-              className="h-8 md:h-9 w-auto"
+              width={1440}
+              height={374}
+              className="h-10 md:h-11 w-auto"
               priority
             />
           </Link>
