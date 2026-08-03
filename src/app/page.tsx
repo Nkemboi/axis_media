@@ -4,7 +4,6 @@ import WorkCard from "@/components/WorkCard";
 import TestimonialWall from "@/components/TestimonialWall";
 import EngagementTiers from "@/components/EngagementTiers";
 import CTASection from "@/components/CTASection";
-import AxisMotif from "@/components/AxisMotif";
 import Reveal from "@/components/Reveal";
 import { getWorkItems, getServices, getTestimonials, getPosts } from "@/lib/queries";
 
@@ -134,20 +133,6 @@ export default async function HomePage() {
         </section>
       </Reveal>
 
-      <Reveal>
-        <section className="container-wide pb-24">
-          <div className="rounded-3xl bg-gradient-orange p-12 md:p-16 text-center relative overflow-hidden">
-            <h2 className="font-heading font-bold text-3xl md:text-4xl text-charcoal">Less process, more progress.</h2>
-            <Link
-              href="/contact"
-              className="inline-flex items-center mt-8 rounded-full bg-charcoal px-7 py-3.5 font-semibold text-soft hover:bg-slate-900 transition-colors"
-            >
-              Ready when you are
-            </Link>
-            <AxisMotif className="absolute -bottom-4 left-0 w-full h-16 opacity-20" />
-          </div>
-        </section>
-      </Reveal>
     </>
   );
 }
