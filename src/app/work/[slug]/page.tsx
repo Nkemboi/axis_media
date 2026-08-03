@@ -21,7 +21,7 @@ export default async function WorkDetailPage({ params }: { params: { slug: strin
 
   return (
     <>
-      <section className="container-wide pt-20 pb-16">
+      <section className="container-wide pt-[50px] pb-16">
         <Link href="/work" className="text-sm text-steel hover:text-axis-orange">&larr; Back to work</Link>
 
         <div className="flex items-center justify-between text-sm text-steel mt-8">

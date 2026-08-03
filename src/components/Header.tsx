@@ -20,8 +20,6 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    if (!isHome) return; // interior pages start in the "activated" state already
-
     let ticking = false;
     const handleScroll = () => {
       if (ticking) return;
@@ -35,12 +33,12 @@ export default function Header() {
     handleScroll();
     window.addEventListener("scroll", handleScroll, { passive: true });
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [isHome]);
+  }, []);
 
-  // On the homepage the bar is transparent until you scroll past the hero's
-  // top edge. On every other page there's no hero to be transparent over,
-  // so it renders "activated" immediately.
-  const active = scrolled || !isHome;
+  // The pill/blur/border only appears once you scroll, on every page alike.
+  const active = scrolled;
+  // Only the homepage has a dark hero behind the header before you scroll,
+  // so that's the only case where the pre-scroll nav text needs to be light.
   const overlayLight = isHome && !scrolled;
 
   return (

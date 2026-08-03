@@ -13,7 +13,7 @@ export default async function WorkPage() {
 
   return (
     <>
-      <section className="container-wide pt-20 pb-16">
+      <section className="container-wide pt-[50px] pb-16">
         <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-3xl">Our Work</h1>
         <p className="mt-6 max-w-xl text-muted text-base md:text-lg">
           A selection of brand, web, and campaign work for businesses across East Africa.

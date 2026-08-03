@@ -24,10 +24,10 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-10">
           <div className="col-span-2">
             <Image
-              src="/logo-full.png"
+              src="/logo-footer.png"
               alt="Axis Media Solutions"
-              width={1440}
-              height={374}
+              width={1313}
+              height={349}
               className="h-10 w-auto mb-4"
             />
             <p className="text-white/60 text-sm max-w-xs">

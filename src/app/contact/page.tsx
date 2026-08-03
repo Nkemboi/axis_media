@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
-    <section className="container-wide pt-20 pb-28">
+    <section className="container-wide pt-[50px] pb-28">
       <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-2xl">Let's work together.</h1>
       <p className="mt-6 max-w-xl text-muted text-base md:text-lg">
         Tell us a little about your business and what you're looking to achieve. We reply within one business day.
