@@ -2,7 +2,14 @@ import Link from "next/link";
 import Image from "next/image";
 import AxisMotif from "./AxisMotif";
 
-const chips = ["Branding", "Graphic Design", "Digital Marketing", "Web Design", "Print Design", "Consultancy"];
+const chips = [
+  { label: "Branding", slug: "branding" },
+  { label: "Graphic Design", slug: "graphic-design" },
+  { label: "Digital Marketing", slug: "digital-marketing" },
+  { label: "Web Design", slug: "web-design" },
+  { label: "Print Design", slug: "print-design" },
+  { label: "Consultancy", slug: "consultancy" },
+];
 
 export default function Hero() {
   return (
@@ -22,12 +29,13 @@ export default function Hero() {
       <div className="container-wide pt-20 pb-24 md:pt-28 md:pb-32 relative">
         <div className="flex flex-wrap gap-3 mb-10">
           {chips.map((chip) => (
-            <span
-              key={chip}
-              className="text-xs md:text-sm px-4 py-2 rounded-full border border-white/10 text-platinum bg-white/5 backdrop-blur-sm"
+            <Link
+              key={chip.slug}
+              href={`/services/${chip.slug}`}
+              className="text-xs md:text-sm px-4 py-2 rounded-full border border-white/10 text-white bg-white/5 backdrop-blur-sm hover:bg-axis-orange hover:text-charcoal hover:border-axis-orange transition-colors"
             >
-              {chip}
-            </span>
+              {chip.label}
+            </Link>
           ))}
         </div>
 
@@ -36,7 +44,7 @@ export default function Hero() {
           <span className="bg-gradient-orange bg-clip-text text-transparent">Move Brands Forward</span>
         </h1>
 
-        <p className="mt-8 max-w-xl text-platinum text-base md:text-lg">
+        <p className="mt-8 max-w-xl text-white/80 text-base md:text-lg">
           We help East African businesses turn strategy into brand, and brand into growth — without the layers of
           process that slow smaller teams down.
         </p>
@@ -48,7 +56,7 @@ export default function Hero() {
           >
             Start a project
           </Link>
-          <Link href="/work" className="text-sm text-platinum hover:text-axis-orange underline underline-offset-4">
+          <Link href="/work" className="text-sm text-white/80 hover:text-axis-orange underline underline-offset-4">
             See what we've been up to
           </Link>
         </div>

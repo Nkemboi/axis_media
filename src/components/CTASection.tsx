@@ -4,7 +4,7 @@ export default function CTASection({ label = "Let's work together." }: { label?:
   const repeated = Array.from({ length: 6 }).fill(label) as string[];
 
   return (
-    <div className="border-y border-white/5 bg-slate-900 overflow-hidden py-8">
+    <div className="bg-axis-orange overflow-hidden py-8">
       <Link href="/contact" className="marquee-group block group">
         <div className="marquee-track flex whitespace-nowrap w-max">
           {[0, 1].map((setIndex) => (
@@ -12,7 +12,7 @@ export default function CTASection({ label = "Let's work together." }: { label?:
               {repeated.map((text, i) => (
                 <span
                   key={`${setIndex}-${i}`}
-                  className="font-heading font-bold text-3xl md:text-5xl text-soft/20 group-hover:text-axis-orange px-6 transition-colors"
+                  className="font-heading font-bold text-3xl md:text-5xl text-white group-hover:text-charcoal px-6 transition-colors"
                 >
                   {text}
                 </span>
