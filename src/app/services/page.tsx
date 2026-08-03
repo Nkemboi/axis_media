@@ -15,8 +15,8 @@ export default async function ServicesPage() {
   return (
     <>
       <section className="container-wide pt-20 pb-16">
-        <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-soft max-w-3xl">What we do</h1>
-        <p className="mt-6 max-w-xl text-platinum text-base md:text-lg">
+        <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-3xl">What we do</h1>
+        <p className="mt-6 max-w-xl text-muted text-base md:text-lg">
           Six disciplines, one coherent brand system. We help you focus on the work that actually moves the needle.
         </p>
       </section>
@@ -27,10 +27,10 @@ export default async function ServicesPage() {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="rounded-2xl border border-white/5 bg-slate-900 p-8 hover:border-axis-orange/40 transition-colors"
+              className="rounded-2xl border border-black/10 bg-white p-8 hover:border-axis-orange/40 transition-colors"
             >
-              <h2 className="font-heading font-bold text-xl text-soft">{service.name}</h2>
-              <p className="text-sm text-platinum mt-3">{service.shortDescription}</p>
+              <h2 className="font-heading font-bold text-xl text-ink">{service.name}</h2>
+              <p className="text-sm text-muted mt-3">{service.shortDescription}</p>
               <span className="inline-block mt-6 text-sm text-axis-orange">Learn more &rarr;</span>
             </Link>
           ))}

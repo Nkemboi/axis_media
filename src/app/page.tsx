@@ -24,7 +24,7 @@ export default async function HomePage() {
 
       <Reveal>
         <section className="container-wide py-20 md:py-28">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-soft">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-ink">
             Since 2021, our creative work has helped businesses across East Africa launch, rebrand, and grow.
           </h2>
           <Link href="/work" className="inline-block mt-6 text-axis-orange hover:text-axis-gold text-sm font-medium">
@@ -44,7 +44,7 @@ export default async function HomePage() {
             >
               Start a project
             </Link>
-            <Link href="/work" className="text-sm text-platinum hover:text-axis-orange underline underline-offset-4">
+            <Link href="/work" className="text-sm text-muted hover:text-axis-orange underline underline-offset-4">
               Or view more work
             </Link>
           </div>
@@ -52,10 +52,10 @@ export default async function HomePage() {
       </Reveal>
 
       <Reveal>
-        <section className="bg-slate-900 py-20 md:py-28">
+        <section className="bg-section-alt py-20 md:py-28">
           <div className="container-wide">
-            <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-soft">What we do</h2>
-            <p className="mt-4 max-w-xl text-platinum text-sm md:text-base">
+            <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-ink">What we do</h2>
+            <p className="mt-4 max-w-xl text-muted text-sm md:text-base">
               We turn early ideas and growing businesses into brands people remember — by focusing on the work that
               actually moves the needle.
             </p>
@@ -68,9 +68,9 @@ export default async function HomePage() {
                 <Link
                   key={service.slug}
                   href={`/services/${service.slug}`}
-                  className="rounded-2xl border border-white/5 bg-charcoal p-6 hover:border-axis-orange/40 transition-colors"
+                  className="rounded-2xl border border-black/10 bg-white p-6 hover:border-axis-orange/40 transition-colors"
                 >
-                  <h3 className="font-heading font-semibold text-soft">{service.name}</h3>
+                  <h3 className="font-heading font-semibold text-ink">{service.name}</h3>
                   <p className="text-xs text-steel mt-2">{service.shortDescription}</p>
                 </Link>
               ))}
@@ -81,10 +81,10 @@ export default async function HomePage() {
 
       <Reveal>
         <section className="container-wide py-20 md:py-28">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-soft">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-ink">
             Hear it from the ones who are thriving today.
           </h2>
-          <p className="mt-4 max-w-xl text-platinum text-sm md:text-base">
+          <p className="mt-4 max-w-xl text-muted text-sm md:text-base">
             We've helped clients across East Africa sharpen their brand, launch new products, and grow into new
             markets.
           </p>
@@ -95,9 +95,9 @@ export default async function HomePage() {
       </Reveal>
 
       <Reveal>
-        <section className="bg-slate-900 py-20 md:py-28">
+        <section className="bg-section-alt py-20 md:py-28">
           <div className="container-wide">
-            <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-soft">
+            <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-ink">
               Tight timelines. High stakes. We're built for growing businesses that just need to get to the point.
             </h2>
             <div className="mt-12">
@@ -111,8 +111,8 @@ export default async function HomePage() {
 
       <Reveal>
         <section className="container-wide py-20 md:py-28">
-          <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-soft">Insights</h2>
-          <p className="mt-4 max-w-xl text-platinum text-sm md:text-base">
+          <h2 className="font-heading font-bold text-2xl md:text-3xl max-w-2xl text-ink">Insights</h2>
+          <p className="mt-4 max-w-xl text-muted text-sm md:text-base">
             News, views, and real lessons in brand and design.
           </p>
           <Link href="/insights" className="inline-block mt-4 text-axis-orange hover:text-axis-gold text-sm font-medium">
@@ -124,10 +124,10 @@ export default async function HomePage() {
               <Link
                 key={post.slug}
                 href={`/insights/${post.slug}`}
-                className="rounded-2xl bg-slate-900 border border-white/5 p-6 hover:border-axis-orange/40 transition-colors"
+                className="rounded-2xl bg-white border border-black/10 p-6 hover:border-axis-orange/40 transition-colors"
               >
-                <h3 className="font-heading font-semibold text-soft text-lg">{post.title}</h3>
-                <p className="text-sm text-platinum mt-3 line-clamp-3">{post.excerpt}</p>
+                <h3 className="font-heading font-semibold text-ink text-lg">{post.title}</h3>
+                <p className="text-sm text-muted mt-3 line-clamp-3">{post.excerpt}</p>
               </Link>
             ))}
           </div>

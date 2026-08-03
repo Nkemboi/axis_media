@@ -7,7 +7,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // Kept as-is: used intentionally for the dark hero photo overlay,
+        // the dark CTA marquee band, and dark text on orange buttons.
         charcoal: "#0D0D0D",
+        soft: "#F9F9F9",
         axis: {
           orange: "#FF6A00",
           gold: "#FFB100",
@@ -17,10 +20,13 @@ const config: Config = {
           DEO: "#2A2A2A",
           900: "#2A2A2A",
         },
-        platinum: "#E6E6E6",
-        soft: "#F9F9F9",
         steel: "#7A7A7A",
         navy: "#0A1A2F",
+        // New: the site's main off-white theme.
+        page: "#F9F7F4",
+        "section-alt": "#F0EDE7",
+        ink: "#1A1A1A",
+        muted: "#5C5C5C",
       },
       fontFamily: {
         heading: ["var(--font-montserrat)", "sans-serif"],

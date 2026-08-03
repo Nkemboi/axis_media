@@ -29,23 +29,23 @@ export default async function WorkDetailPage({ params }: { params: { slug: strin
           <span>{item.quarter}</span>
         </div>
 
-        <h1 className="font-heading font-extrabold text-3xl md:text-5xl text-soft max-w-3xl mt-4">
+        <h1 className="font-heading font-extrabold text-3xl md:text-5xl text-ink max-w-3xl mt-4">
           {item.summary}
         </h1>
 
         {item.raised && (
-          <p className="mt-6 inline-block text-xs uppercase tracking-widest2 text-axis-orange bg-white/5 rounded-full px-4 py-2">
+          <p className="mt-6 inline-block text-xs uppercase tracking-widest2 text-axis-orange bg-black/5 rounded-full px-4 py-2">
             {item.raised}
           </p>
         )}
 
-        <p className="mt-10 max-w-2xl text-platinum text-base md:text-lg leading-relaxed">
+        <p className="mt-10 max-w-2xl text-muted text-base md:text-lg leading-relaxed">
           {item.description}
         </p>
 
         <div className="mt-8 flex flex-wrap gap-2">
           {item.tags.map((tag) => (
-            <span key={tag} className="text-xs px-3 py-1 rounded-full bg-white/5 text-platinum">
+            <span key={tag} className="text-xs px-3 py-1 rounded-full bg-black/5 text-muted">
               {tag}
             </span>
           ))}

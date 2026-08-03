@@ -24,16 +24,16 @@ export default async function ServiceDetailPage({ params }: { params: { slug: st
       <section className="container-wide pt-20 pb-16">
         <Link href="/services" className="text-sm text-steel hover:text-axis-orange">&larr; All services</Link>
 
-        <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-soft max-w-3xl mt-8">
+        <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-3xl mt-8">
           {service.name}
         </h1>
-        <p className="mt-6 max-w-2xl text-platinum text-base md:text-lg leading-relaxed">
+        <p className="mt-6 max-w-2xl text-muted text-base md:text-lg leading-relaxed">
           {service.description}
         </p>
 
         <div className="mt-12 grid sm:grid-cols-2 gap-4 max-w-2xl">
           {service.deliverables.map((item) => (
-            <div key={item} className="rounded-xl bg-slate-900 border border-white/5 px-5 py-4 text-sm text-soft">
+            <div key={item} className="rounded-xl bg-white border border-black/10 px-5 py-4 text-sm text-ink">
               {item}
             </div>
           ))}

@@ -35,9 +35,9 @@ export default function EngagementTiers() {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       {tiers.map((tier) => (
-        <div key={tier.title} className="rounded-2xl border border-white/5 bg-slate-900 p-8">
-          <h3 className="font-heading font-bold text-xl text-soft mb-3">{tier.title}</h3>
-          <p className="text-platinum text-sm leading-relaxed mb-6">{tier.description}</p>
+        <div key={tier.title} className="rounded-2xl border border-black/10 bg-white p-8">
+          <h3 className="font-heading font-bold text-xl text-ink mb-3">{tier.title}</h3>
+          <p className="text-muted text-sm leading-relaxed mb-6">{tier.description}</p>
           <Link href={tier.href} className="text-sm text-axis-orange hover:text-axis-gold font-medium">
             {tier.cta} &rarr;
           </Link>

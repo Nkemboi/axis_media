@@ -15,7 +15,7 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-charcoal/90 backdrop-blur border-b border-white/5">
+    <header className="sticky top-0 z-50 bg-page/90 backdrop-blur border-b border-black/5">
       <div className="container-wide flex items-center justify-between h-20">
         <Link href="/" className="flex items-center shrink-0" onClick={() => setMenuOpen(false)}>
           <Image
@@ -33,7 +33,7 @@ export default function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm text-platinum hover:text-axis-orange transition-colors"
+              className="text-sm text-muted hover:text-axis-orange transition-colors"
             >
               {link.label}
             </Link>
@@ -49,7 +49,7 @@ export default function Header() {
 
         <button
           type="button"
-          className="md:hidden inline-flex items-center justify-center w-10 h-10 -mr-2 text-soft"
+          className="md:hidden inline-flex items-center justify-center w-10 h-10 -mr-2 text-ink"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           aria-expanded={menuOpen}
           onClick={() => setMenuOpen((open) => !open)}
@@ -67,14 +67,14 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <div className="md:hidden border-t border-white/5 bg-charcoal">
+        <div className="md:hidden border-t border-black/5 bg-page">
           <nav className="container-wide flex flex-col py-6 gap-1">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-base text-platinum hover:text-axis-orange transition-colors py-3 border-b border-white/5"
+                className="text-base text-muted hover:text-axis-orange transition-colors py-3 border-b border-black/5"
               >
                 {link.label}
               </Link>

@@ -8,8 +8,8 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <section className="container-wide pt-20 pb-28">
-      <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-soft max-w-2xl">Let's work together.</h1>
-      <p className="mt-6 max-w-xl text-platinum text-base md:text-lg">
+      <h1 className="font-heading font-extrabold text-4xl md:text-6xl text-ink max-w-2xl">Let's work together.</h1>
+      <p className="mt-6 max-w-xl text-muted text-base md:text-lg">
         Tell us a little about your business and what you're looking to achieve. We reply within one business day.
       </p>
 
@@ -21,35 +21,35 @@ export default function ContactPage() {
           className="space-y-5"
         >
           <div>
-            <label htmlFor="name" className="block text-sm text-platinum mb-2">Name</label>
+            <label htmlFor="name" className="block text-sm text-muted mb-2">Name</label>
             <input
               id="name"
               name="name"
               type="text"
               required
-              className="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-soft placeholder:text-steel focus:border-axis-orange outline-none"
+              className="w-full rounded-lg bg-white border border-black/10 px-4 py-3 text-ink placeholder:text-steel focus:border-axis-orange outline-none"
               placeholder="Your name"
             />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm text-platinum mb-2">Email</label>
+            <label htmlFor="email" className="block text-sm text-muted mb-2">Email</label>
             <input
               id="email"
               name="email"
               type="email"
               required
-              className="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-soft placeholder:text-steel focus:border-axis-orange outline-none"
+              className="w-full rounded-lg bg-white border border-black/10 px-4 py-3 text-ink placeholder:text-steel focus:border-axis-orange outline-none"
               placeholder="you@company.com"
             />
           </div>
           <div>
-            <label htmlFor="message" className="block text-sm text-platinum mb-2">Tell us about your project</label>
+            <label htmlFor="message" className="block text-sm text-muted mb-2">Tell us about your project</label>
             <textarea
               id="message"
               name="message"
               required
               rows={5}
-              className="w-full rounded-lg bg-slate-900 border border-white/10 px-4 py-3 text-soft placeholder:text-steel focus:border-axis-orange outline-none"
+              className="w-full rounded-lg bg-white border border-black/10 px-4 py-3 text-ink placeholder:text-steel focus:border-axis-orange outline-none"
               placeholder="What are you looking to build?"
             />
           </div>
@@ -68,15 +68,15 @@ export default function ContactPage() {
         <div className="space-y-8">
           <div>
             <h2 className="text-xs uppercase tracking-widest2 text-steel mb-2">Email</h2>
-            <p className="text-soft">hello@axismediasolutions.com</p>
+            <p className="text-ink">hello@axismediasolutions.com</p>
           </div>
           <div>
             <h2 className="text-xs uppercase tracking-widest2 text-steel mb-2">Phone</h2>
-            <p className="text-soft">+254 700 123 456</p>
+            <p className="text-ink">+254 700 123 456</p>
           </div>
           <div>
             <h2 className="text-xs uppercase tracking-widest2 text-steel mb-2">Location</h2>
-            <p className="text-soft">Nairobi, Kenya</p>
+            <p className="text-ink">Nairobi, Kenya</p>
           </div>
         </div>
       </div>

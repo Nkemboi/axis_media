@@ -4,7 +4,7 @@ import { WorkItem } from "@/types";
 export default function WorkCard({ item, size = "normal" }: { item: WorkItem; size?: "normal" | "large" }) {
   const content = (
     <div
-      className={`group relative rounded-2xl bg-slate-900 border border-white/5 overflow-hidden hover:border-axis-orange/40 transition-colors ${
+      className={`group relative rounded-2xl bg-white border border-black/10 overflow-hidden hover:border-axis-orange/40 transition-colors ${
         size === "large" ? "p-10 md:p-14" : "p-8"
       }`}
     >
@@ -12,7 +12,7 @@ export default function WorkCard({ item, size = "normal" }: { item: WorkItem; si
         <span>{item.client}</span>
         <span>{item.quarter}</span>
       </div>
-      <p className={`text-soft font-medium ${size === "large" ? "text-xl md:text-2xl" : "text-base"}`}>
+      <p className={`text-ink font-medium ${size === "large" ? "text-xl md:text-2xl" : "text-base"}`}>
         {item.summary}
       </p>
       {item.raised && (
@@ -23,7 +23,7 @@ export default function WorkCard({ item, size = "normal" }: { item: WorkItem; si
       )}
       <div className="mt-6 flex flex-wrap gap-2">
         {item.tags.map((tag) => (
-          <span key={tag} className="text-[11px] px-3 py-1 rounded-full bg-white/5 text-platinum">
+          <span key={tag} className="text-[11px] px-3 py-1 rounded-full bg-black/5 text-muted">
             {tag}
           </span>
         ))}
